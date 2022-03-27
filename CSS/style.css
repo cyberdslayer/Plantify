@@ -1,0 +1,258 @@
+:root {
+    --primary-color: #343C2D;
+    --secondary-color: #D8E8CD;
+    --dark-color: #353932;
+    --light-color: #f4f4f4;
+    --success-color: #5cb85c;
+    --error-color: #d9534f;
+    
+
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.navbar{
+    height: 10vh;
+}
+
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar ul a{
+    color: var(--primary-color);
+    padding: 10px;
+    margin: 0 5px;
+}
+
+.navbar a:hover {
+    border-bottom: 2px var(--primary-color) solid;
+}
+
+
+
+
+.container{
+    margin: 0 auto;
+    max-width: 1200px;
+    
+    overflow: visible;
+    
+}
+
+.our-work .container img{
+    /* width: 100px; */
+}
+
+.body{
+    background-color: var(--secondary-color);
+    /* background-image: url(../images/image5.png); */
+    /* object-fit:none; */
+    max-width: 1440;
+    /* height: 720px; */
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.showcase .container{
+    justify-content: space-around;
+    align-items: center;
+    /* height: 74vh; */
+}
+
+.showcase .container h1{
+    max-width: 400px;
+    height: 250px;
+    font-size: 5rem;
+    
+    color: var(--primary-color);
+}
+
+.showcase .container p{
+    max-width: 560px;
+    height: auto;
+    font-size: 24px;
+    
+}
+
+.showcase-text h1{
+    /* margin: 10px; */
+    /* border-right: 0.5px solid black; */
+    
+}
+
+.showcase-text a{
+    margin: 20px 0 ;
+}
+
+.video iframe{
+    max-width: 40rem;
+    height: 30vh;
+}
+
+/* Stats data css */
+.stat .container{
+    max-width: 75vw;
+}
+
+.stat-text p{
+    box-sizing: border-box;
+    max-width: 92px;
+}
+
+.stat-text h2{
+    box-sizing: border-box;
+    max-width: 120px;
+}
+
+.stat-text div:hover {
+    transform: translateY(-15px);
+    /* font-size: 18px; */
+     transition: transform 0.2s ease-in;
+     transition: all .3s ease-out;
+    
+}
+
+/* sign page */
+/* signup */
+
+.sign-form {
+    position: relative;
+    top: 15vh;
+    /* height: 350px; */
+    /* width: 400px; */
+    padding: 40px;
+    align-items: center;
+    justify-content: center;
+
+    /* z-index: 100; */
+    /* justify-self: flex-end; */
+    /* animation: slideInFromRight 1s ease-in; */
+}
+
+.sign .container{
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-form .form-control{
+    margin: 30px 0;
+}
+
+.sign-form input[type='text'],
+.sign-form input[type='email']{
+    
+    position: relative;
+    border-radius: 25px;
+    padding: 3px;
+    font-size: 22px;
+    /* width: 30%; */
+    height: 3rem;
+    background-color: var(--secondary-color);
+    text-align: center;
+}
+
+.sign-form input{
+    align-items: center;
+}
+
+/* OUR work=================================== */
+.our-work h1,
+.about-us h1{
+    font-size: 60px;
+    margin: 2rem 0;
+}
+.our-work iframe{
+    max-width: 290px;
+    max-height: 550px;
+}
+
+/* .our-work figure {
+
+    
+} */
+
+.our-work figure img{
+    align-items: center;
+    max-width: 350px;
+}
+
+/* About us=================================== */
+
+.about-us p{
+    font-size: 22px;
+}
+
+.about-us .container{
+    /* height: 600px; */
+}
+
+
+
+
+
+
+/* foooter========================================= */
+
+footer{
+    background-color: var(--primary-color);
+    height: 90px;
+    /* transform: rotate(90deg); */
+    /* transform-origin: 96.7%; */
+}
+
+footer h1{
+    color: var(--light-color);
+}
+
+
+
+
+
+/* for tablets */
+@media (max-width:768px) {
+    .showcase .container{
+        display: block;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+    
+}
+
+@media (max-width:578) {
+    
+    /* .showcase .container h1{
+        font-size: 3rem;
+    } */
+    .showcase .container {
+        /* height: 100%; */
+    }
+
+
+    /* .showcase .container h1 {
+        font-size: 2rem;
+        
+    } */
+
+    .showcase .container p {
+        font-size: 4px;
+        
+}
